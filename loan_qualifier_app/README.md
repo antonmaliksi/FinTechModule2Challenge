@@ -97,15 +97,15 @@ The following screenshots observe the changes made to the existing code:
 
 ### Software Requirements
 
-![Alt text](https://github.com/antonmaliksi/FinTechModule2Challenge/blob/main/loan_qualifier_app/README/fileio.PNG)
+![Alt text](https://github.com/antonmaliksi/FinTechModule2Challenge/blob/main/loan_qualifier_app/fileio.PNG)
 
 ### Systems Design
 
-![Alt text](https://github.com/antonmaliksi/FinTechModule2Challenge/blob/main/loan_qualifier_app/README/import_fileio.PNG)
+![Alt text](https://github.com/antonmaliksi/FinTechModule2Challenge/blob/main/loan_qualifier_app/import_fileio.PNG)
 
 ### Usability
 
-![Alt text](https://github.com/antonmaliksi/FinTechModule2Challenge/blob/main/loan_qualifier_app/README/updated_CLI.PNG)
+![Alt text](https://github.com/antonmaliksi/FinTechModule2Challenge/blob/main/loan_qualifier_app/updated_CLI.PNG)
 
 ---
 
