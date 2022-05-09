@@ -23,6 +23,10 @@ from qualifier.filters.credit_score import filter_credit_score
 from qualifier.filters.debt_to_income import filter_debt_to_income
 from qualifier.filters.loan_to_value import filter_loan_to_value
 
+def save_csv():
+    csvpath = questionary.text("Please enter a filepath for the saved data: (qualifying_loans.csv)").ask()
+    save_csv(Path(csvpath), qualifying_loans)
+
 
 def load_bank_data():
     """Ask for the file path to the latest banking data and load the CSV file.
@@ -101,15 +105,11 @@ def find_qualifying_loans(bank_data, credit_score, debt, income, loan, home_valu
 
     return bank_data_filtered
 
-
 def save_qualifying_loans(qualifying_loans):
-    """Saves the qualifying loans to a CSV file.
-
-    Args:
-        qualifying_loans (list of lists): The qualifying bank loans.
-    """
-    # @TODO: Complete the usability dialog for savings the CSV Files.
-    # YOUR CODE HERE!
+    qualifying_loans = questionary.confirm("Would you like to save the list of qualifying loans?").ask()
+        if "Yes":
+        return qualifying_loans
+        else: sys.exit("Thank you, the list has not been saved.")
 
 
 def run():
